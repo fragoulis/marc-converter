@@ -1,0 +1,341 @@
+{
+	"create" : [],
+	"convert" : {
+		"001" : [{
+			"clone" : true
+		}],
+		"003" : [{
+			"clone" : true
+		}],
+		"005" : [{
+			"clone" : true
+		}],
+		"008" : [{
+			"field" : {
+				"repeat" : false,
+				"tag" : "100",
+				"subfields" : [{
+					"repeat" : false,
+					"name" : "a",
+					"offset" : 0,
+					"length" : 8,
+					"ref" : "[0,6]"
+				}]
+			}
+		}, {
+			"field" : {
+				"repeat" : false,
+				"tag" : "106",
+				"subfields" : [{
+					"name" : "c",
+					"ref" : "[6,1]"
+				}]
+			}
+		},{
+			"field" : {
+				"repeat" : false,
+				"tag" : "100",
+				"subfields" : [{
+					"repeat" : false,
+					"name" : "a",
+					"offset" : 8,
+					"length" : 1,
+					"map" : {
+						"a" : "a",
+						"n" : "x",
+						"d" : " "
+					},
+					"ref" : "[9,1]"
+				}]
+			}
+		}, {
+			"field" : {
+				"repeat" : false,
+				"tag" : "154",
+				"subfields" : [{
+					"name" : "a",
+					"offset" : 0,
+					"length" : 1,
+					"ref" : "[12,1]",
+					"map" : {
+						"n" : "x"
+					}
+				}]
+			}
+		}, {
+			"field" : {
+				"repeat" : false,
+				"tag" : "106",
+				"subfields" : [{
+					"name" : "b",
+					"ref" : "[17,1]",
+					"map" : {
+						"n" : "x",
+						"|" : " ",
+						"a" : " "
+					}
+				}]
+			}
+		}, {
+			"field" : {
+				"repeat" : false,
+				"tag" : "150",
+				"subfields" : [{
+					"name" : "a",
+					"ref" : "[28,1]",
+					"map" : {
+						"#" : "y",
+						"|" : "z"
+					}
+				}]
+			}
+		}, {
+			"field" : {
+				"repeat" : false,
+				"tag" : "120",
+				"subfields" : [{
+					"name" : "a",
+					"offset" : 1,
+					"length" : 1,
+					"ref" : "[32,1]",
+					"map" : {
+						"a" : "a",
+						"n" : " "
+					}
+				}]
+			}
+		}, {
+			"field" : {
+				"repeat" : false,
+				"tag" : "100",
+				"subfields" : [{
+					"name" : "a",
+					"offset" : 8,
+					"length" : 1,
+					"ref" : "[33,1]",
+					"map" : {
+						"a" : "a",
+						"c" : "c",
+						"d" : "x",
+						"n" : "x"
+					}
+				}]
+			}
+		}],
+		"010" : [{
+			"field" : {
+				"tag" : "035",
+				"subfields" : [{
+					"name" : "a",
+					"ref" : "$a"
+				}]
+			}
+		}],
+		
+		"039" : [{
+			"field" : {
+				"tag" : "035",
+				"subfields" : [{
+					"name" : "a",
+					"ref" : "$a"
+				}]
+			}
+		}],
+	
+	
+		"040" : [{
+			"condition" : {
+				"subfield_exists" : "a"
+			},
+			"field" : {
+				"indicator2" : {
+					"value" : "0"
+				},
+				"tag" : "801",
+				"subfields" : [{
+					"name" : "b",
+					"ref" : "$a"
+				}]
+			}
+		}, {
+			"condition" : {
+				"subfield_exists" : "c"
+			},
+			"field" : {
+				"indicator2" : {
+					"value" : "1"
+				},
+				"tag" : "801",
+				"subfields" : [{
+					"name" : "b",
+					"ref" : "$c"
+				}]
+			}
+		}, {
+			"condition" : {
+				"subfield_exists" : "d"
+			},
+			"field" : {
+				"indicator2" : {
+					"value" : "2"
+				},
+				"tag" : "801",
+				"subfields" : [{
+					"name" : "b",
+					"ref" : "$d"
+				}]
+			}
+		}, {
+			"field" : {
+				"repeat" : false,
+				"tag" : "100",
+				"subfields" : [{
+					"repeat" : false,
+					"name" : "a",
+					"offset" : 9,
+					"length" : 3,
+					"ref" : "$b"
+				}]
+			}
+		}],
+		"053" : [{
+			"field" : {
+				"tag" : "680",
+				"subfields" : [{
+					"name" : "a",
+					"ref" : "$a"
+				},{
+					"name" : "c",
+					"ref" : "$c"
+				},{
+					"name" : "b",
+					"ref" : "$b"
+				}]
+			}
+		}],
+		"150" : [{
+			"field" : {
+				"tag" : "250",
+				"subfields" : [{
+					"name" : "a",
+					"ref" : "$a"
+				}]
+			}
+		}],
+		"450" : [{
+			"field" : {
+				"tag" : "450",
+				"subfields" : [{
+					"name" : "a",
+					"ref" : "$a"
+				},{
+					"name" : "x",
+					"ref" : "$x"
+				}]
+			}
+		}],
+		"550" : [{
+			"clone":true
+		}],
+		"670" : [{
+			"field" : {
+				"tag" : "810",
+				"subfields" : [{
+					"name" : "a",
+					"ref" : "$a"
+				},{
+					"name" : "b",
+					"ref" : "$b"
+				}]
+			}
+		}],
+		"680" : [{
+			"field" : {
+				"tag" : "330",
+				"indicator1" : {
+					"value" : "1"
+				},
+				"subfields" : [{
+					"name" : "a",
+					"expr" : "{$i}{$a}"
+				}]
+			}
+		}],
+		"856" : [{
+			"field" : {
+				"tag" : "856",
+				"indicator1" : {
+					"value" : "4"
+				},
+				"subfields" : [{
+					"name" : "q",
+					"ref" : "$q"
+				},{
+					"name" : "u",
+					"ref" : "$u"
+				},{
+					"name" : "z",
+					"ref" : "$z"
+				}]
+			}
+		}]
+	},
+	"leader" : [{
+		"offset" : 0,
+		"length" : 5
+	}, {
+		"offset" : 5,
+		"length" : 1,
+		"map" : {
+			"c" : "c"
+		}
+	}, {
+		"offset" : 6,
+		"length" : 1,
+		"map" : {
+			"z" : "x"
+		}
+	},{
+		"offset" : 7,
+		"length" : 2,
+		"value" : null
+	}, {
+		"offset" : 9,
+		"length" : 1,
+		"value" : "j"
+	}, {
+		"offset" : 10,
+		"length" : 1,
+		"value" : "2"
+	}, {
+		"offset" : 11,
+		"length" : 1,
+		"value" : "2"
+	}, {
+		"offset" : 12,
+		"length" : 5
+	}, {
+		"offset" : 17,
+		"length" : 1,
+		"map" : {
+			"n" : "#",
+			"o" : "3"
+		}
+	}, {
+		"offset" : 18,
+		"length" : 2,
+		"value" : null
+	}, {
+		"offset" : 20,
+		"length" : 1,
+		"value" : "4"
+	}, {
+		"offset" : 21,
+		"length" : 1,
+		"value" : "5"
+	}, {
+		"offset" : 22,
+		"length" : 2,
+		"value" : null
+	}]
+}
